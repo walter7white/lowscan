@@ -65,6 +65,8 @@ azul -e "MENSAL CRONTAB\n"
 cat /etc/cron.monthly
 azul -e "PROCURANDO DIR COM PERMISSÃO 777\n"
 find / -writable -type d 2>/dev/null
+azul -e "PROCURANDO DIR COM PERMISSÃO 777\n"
+find / -type f -perm 777 2>/dev/null
 azul -e "PROCURANDO ARQUIVOS COM PERMISSÃO SET-UID\n"
 find / -perm -u=s -type f 2>/dev/null
 azul -e "PROCURANDO SUDO VULN\n"
