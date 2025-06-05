@@ -55,6 +55,8 @@ azul -e "PROCESSOS EM EXECUÇÃO USANDO ROOT\n"
 ps aux | grep "root"
 azul -e "ESCANEANDO CRONTAB\n"
 cat /etc/crontab
+azul -e "HORA CRONTAB\n"
+cat /etc/cron.hourly
 azul -e "DIARIO CRONTAB\n"
 cat /etc/cron.daily
 azul -e "SEMANAL CRONTAB\n"
